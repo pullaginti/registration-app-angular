@@ -1,0 +1,11 @@
+<p>admin-page works!</p>
+<div class="col-md-12">
+    <table class="table">
+<th>Name</th>
+<th>Email</th>
+<th>Action</th>
+
+
+<tr *ngFor="let user of usersList;"><td>{{user.name}}</td><td>{{user.email}}</td><td><input (click)="deleteData(user.id)"type="button" class="btn btn-danger" value="Delete"/></td></tr>
+    </table>
+</div>
